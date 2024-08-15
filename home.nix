@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ lib,config, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -6,7 +6,7 @@
   home.username = "dharundds";
   home.homeDirectory = "/home/dharundds";
 
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -28,26 +28,26 @@
     enable = true;
     enableZshIntegration = true;
     settings = {
-      format = lib.concatStrings [
-        "[](#9A348E)"
-        "$os"
-        "$username"
-        "[](bg:#DA627D fg:#9A348E)"
-        "$directory"
-        "[](fg:#DA627D bg:#FCA17D)"
-        "$git_branch"
-        "$git_status"
-        "[](fg:#FCA17D bg:#86BBD8)"
-        "$golang"
-        "$python"
-        "$nodejs"
-        "$rust"
-        "[](fg:#86BBD8 bg:#06969A)"
-        "$docker_context"
-        "[](fg:#06969A bg:#33658A)"
-        "$time"
-        "[ ](fg:#33658A)"
-      ];
+      # format = lib.concatStrings [
+      #   "[](#9A348E)"
+      #   "$os"
+      #   "$username"
+      #   "[](bg:#DA627D fg:#9A348E)"
+      #   "$directory"
+      #   "[](fg:#DA627D bg:#FCA17D)"
+      #   "$git_branch"
+      #   "$git_status"
+      #   "[](fg:#FCA17D bg:#86BBD8)"
+      #   "$golang"
+      #   "$python"
+      #   "$nodejs"
+      #   "$rust"
+      #   "[](fg:#86BBD8 bg:#06969A)"
+      #   "$docker_context"
+      #   "[](fg:#06969A bg:#33658A)"
+      #   "$time"
+      #   "[ ](fg:#33658A)"
+      # ];
 
       # Disable the blank line at the start of the prompt
       # add_newline = false
@@ -146,8 +146,8 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "zoxide" ];
-      theme = "robbyrussel"
-    }
+      theme = "robbyrussel";
+    };
   };
 
   # Home Manager can also manage your environment variables through
