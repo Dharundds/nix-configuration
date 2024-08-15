@@ -24,7 +24,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.hrithikmj = import ./hrithikmj/home.nix;
+            home-manager.users.dharundds = import ./home.nix;
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }
         ];

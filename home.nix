@@ -29,35 +29,35 @@
     enableZshIntegration = true;
     settings = {
       format = lib.concatStrings [
-        "[](#9A348E)"
+        "[](#d65d0e)"
         "$os"
         "$username"
-        "[](bg:#DA627D fg:#9A348E)"
+        "[](bg:#d79921 fg:#d65d0e)"
         "$directory"
-        "[](fg:#DA627D bg:#FCA17D)"
+        "[](fg:#d79921 bg:#689d6a)"
         "$git_branch"
         "$git_status"
-        "[](fg:#FCA17D bg:#86BBD8)"
+        "[](fg:#689d6a bg:#458588)"
         "$golang"
         "$python"
         "$nodejs"
         "$rust"
-        "[](fg:#86BBD8 bg:#06969A)"
+        "[](fg:#458588 bg:#665c54)"
         "$docker_context"
-        "[](fg:#06969A bg:#33658A)"
+        "[](fg:#665c54 bg:#3c3836)"
         "$time"
-        "[ ](fg:#33658A)"
+        "[ ](fg:#3c3836)"
       ];
 
       # Disable the blank line at the start of the prompt
-      # add_newline = false
+      add_newline = false;
 
       # You can also replace your username with a neat symbol like   or disable this
       # and use the os module below
       username = {
         show_always = true;
-        style_user = "bg:#9A348E";
-        style_root = "bg:#9A348E";
+        style_user = "bg:#d65d0e fg:#fbf1c7";
+        style_root = "bg:#d65d0e fg:#fbf1c7";
         format = "[ $user ]($style)";
         disabled = false;
       };
@@ -65,11 +65,11 @@
       # represents the current operating system
       os =
         {
-          style = "bg:#9A348E";
+          style = "bg:#d65d0e fg:#fbf1c7";
           disabled = false; # Disabled by default
         };
       directory = {
-        style = "bg:#DA627D";
+        style = "fg:#fbf1c7 bg:#d79921";
         format = "[ $path ]($style)";
         truncation_length = 3;
         truncation_symbol = "…/";
@@ -94,40 +94,40 @@
 
       git_branch = {
         symbol = "";
-        style = "bg:#FCA17D";
-        format = "[ $symbol $branch ]($style)";
+        style = "bg:#689d6a";
+        format = "[[ $symbol $branch ](fg:#fbf1c7 bg:#689d6a)]($style)";
       };
       git_status = {
-        style = "bg:#FCA17D";
-        format = "[$all_status$ahead_behind ]($style)";
+        style = "bg:#689d6a";
+        format = "[[($all_status$ahead_behind )](fg:#fbf1c7 bg:#689d6a)]($style)";
       };
       golang =
         {
           symbol = " ";
-          style = "bg:#86BBD8";
-          format = "[ $symbol ($version) ]($style)";
+          style = "bg:#458588";
+          format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
         };
       nodejs = {
         symbol = "";
-        style = "bg:#86BBD8";
-        format = "[ $symbol ($version) ]($style)";
+        style = "bg:#458588";
+        format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
       };
       rust =
         {
-          symbol = "";
-          style = "bg:#86BBD8";
-          format = "[ $symbol ($version) ]($style)";
+         symbol = "";
+         style = "bg:#458588";
+         format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
         };
       python = {
-        symbol = "";
-        style = "bg:color_blue";
-        format = "[ $symbol ($version) ] ($style)";
+       symbol = "";
+       style = "bg:#458588";
+       format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
       };
       time = {
-        disabled = false;
-        time_format = "%R"; # Hour:Minute Format
-        style = " bg:#33658A";
-        format = "[ ♥ $time ]($style)";
+       disabled = false;
+       time_format = "%R";
+       style = "bg:#3c3836";
+       format = "[[  $time ](fg:c#fbf1c7 bg:#3c3836)]($style)";
       };
     };
   };
@@ -146,7 +146,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "zoxide" ];
-      theme = "robbyrussel";
+      theme = "robbyrussell";
     };
   };
 
