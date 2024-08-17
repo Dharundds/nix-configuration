@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./gdm/gdm.nix
     ];
 
   # Bootloader.
@@ -122,11 +123,11 @@
     font = {
       normal = {
         family = "CascadiaCode Nerd Font";
-        style = "Regular"
+        style = "Regular";
       };
       bold = {
         family = "CascadiaCode Nerd Font";
-        style = "Bold"
+        style = "Bold";
       };
       size = 16;
     };
