@@ -23,11 +23,19 @@
           "$docker_context"
           "[](fg:#665c54 bg:#3c3836)"
           "$time"
-          "[ ](fg:#3c3836)"
+          "[](fg:#3c3836)"
         ];
 
         # Disable the blank line at the start of the prompt
-        add_newline = false;
+        line_break = {
+          disabled = false;
+          success_symbol = "[](bold fg:#98971a)";
+          error_symbol = "[](bold fg:#cc241d)";
+          vimcmd_symbol = "[](bold fg:#98971a)";
+          vimcmd_replace_one_symbol = "[](bold fg:#b16286)";
+          vimcmd_replace_symbol = "[](bold fg:#b16286)";
+          vimcmd_visual_symbol = "[](bold fg:#d79921)";
+                  };
 
         # You can also replace your username with a neat symbol like   or disable this
         # and use the os module below
@@ -63,6 +71,13 @@
         # will not be replaced, because "Documents" was already substituted before.
         # So either put "Important Documents" before "Documents" or use the substituted version:
         # "Important 󰈙 " = " 󰈙 "
+        directory.substitutions = {
+          Documents = "󰈙";
+          Downloads = "";
+          Music = "󰝚";
+          Pictures = "";
+          Developer = "󰲋";
+        };
         docker_context = {
           symbol = " ";
           style = "bg:#06969A";
@@ -72,7 +87,7 @@
         git_branch = {
           symbol = "";
           style = "bg:#689d6a";
-          format = "[[ $symbol $branch ](fg:#fbf1c7 bg:#689d6a)]($style)";
+          format = "[[ $symbol $branch ](fg:#cfbf1c7 bg:#689d6a)]($style)";
         };
         git_status = {
           style = "bg:#689d6a";
@@ -80,31 +95,31 @@
         };
         golang =
           {
-            symbol = " ";
+            symbol = "";
             style = "bg:#458588";
-            format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
+            format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
           };
         nodejs = {
           symbol = "";
           style = "bg:#458588";
-          format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
+          format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
         };
         rust =
           {
           symbol = "";
           style = "bg:#458588";
-          format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
+          format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
           };
         python = {
         symbol = "";
         style = "bg:#458588";
-        format = "[[ $symbol( $version) ](fg:c#fbf1c7 bg:#458588)]($style)";
+        format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
         };
         time = {
         disabled = false;
         time_format = "%R";
         style = "bg:#3c3836";
-        format = "[[  $time ](fg:c#fbf1c7 bg:#3c3836)]($style)";
+        format = "[[  $time ](fg:#cfbf1c7 bg:#3c3836)]($style)";
         };
       };
     };
