@@ -87,7 +87,7 @@
         git_branch = {
           symbol = "";
           style = "bg:#689d6a";
-          format = "[[ $symbol $branch ](fg:#cfbf1c7 bg:#689d6a)]($style)";
+          format = "[[ $symbol $branch ](fg:#fbf1c7 bg:#689d6a)]($style)";
         };
         git_status = {
           style = "bg:#689d6a";
@@ -97,29 +97,29 @@
           {
             symbol = "";
             style = "bg:#458588";
-            format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
+            format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#458588)]($style)";
           };
         nodejs = {
           symbol = "";
           style = "bg:#458588";
-          format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
+          format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#458588)]($style)";
         };
         rust =
           {
           symbol = "";
           style = "bg:#458588";
-          format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
+          format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#458588)]($style)";
           };
         python = {
         symbol = "";
         style = "bg:#458588";
-        format = "[[ $symbol( $version) ](fg:#cfbf1c7 bg:#458588)]($style)";
+        format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#458588)]($style)";
         };
         time = {
         disabled = false;
         time_format = "%R";
         style = "bg:#3c3836";
-        format = "[[  $time ](fg:#cfbf1c7 bg:#3c3836)]($style)";
+        format = "[[  $time ](fg:#fbf1c7 bg:#3c3836)]($style)";
         };
       };
     };
