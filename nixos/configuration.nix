@@ -118,20 +118,7 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = ["CascadiaCode" "DroidSansMono" "Cousine"]; } )
   ];
-
-  console = {
-    font = {
-      normal = {
-        family = "CascadiaCode Nerd Font";
-        style = "Regular";
-      };
-      bold = {
-        family = "CascadiaCode Nerd Font";
-        style = "Bold";
-      };
-      size = 16;
-    };
-  };
+  
   # Install firefox.
   programs.firefox.enable = true;
 

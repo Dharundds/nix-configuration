@@ -3,20 +3,22 @@
 {
   imports = [
     # git
-    "./git/git.nix"
+    ./git/git.nix
 
     # zsh
-    "./zsh/zsh.nix"
+    ./zsh/zsh.nix
 
     # zoxide
-    "./zoxide/z.nix"
+    ./zoxide/z.nix
 
     # Starship
-    "./starship/starship.nix"
+    ./starship/starship.nix
 
     # gnome
-    "./gnome/gnome.nix"
+    ./gnome/gnome.nix
 
+    # kitty
+    ./kitty/kitty.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
