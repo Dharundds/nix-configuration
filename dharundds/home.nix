@@ -25,7 +25,7 @@
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
-  home.packages = [
+  home.packages = with pkgs; [
     gnome.dconf-editor
     devbox
   ];
