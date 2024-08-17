@@ -5,6 +5,7 @@
       enable = true;
       enableZshIntegration = true;
       settings = {
+        "$schema" = "https://starship.rs/config-schema.json";
         format = lib.concatStrings [
           "[](#d65d0e)"
           "$os"
@@ -24,21 +25,13 @@
           "[](fg:#665c54 bg:#3c3836)"
           "$time"
           "[](fg:#3c3836)"
+          "$line_break$character"
         ];
 
         # Disable the blank line at the start of the prompt
-        line_break = {
-          disabled = false;
-          success_symbol = "[](bold fg:#98971a)";
-          error_symbol = "[](bold fg:#cc241d)";
-          vimcmd_symbol = "[](bold fg:#98971a)";
-          vimcmd_replace_one_symbol = "[](bold fg:#b16286)";
-          vimcmd_replace_symbol = "[](bold fg:#b16286)";
-          vimcmd_visual_symbol = "[](bold fg:#d79921)";
-                  };
+       
 
-        # You can also replace your username with a neat symbol like   or disable this
-        # and use the os module below
+
         username = {
           show_always = true;
           style_user = "bg:#d65d0e fg:#fbf1c7";
@@ -46,8 +39,6 @@
           format = "[ $user ]($style)";
           disabled = false;
         };
-        # An alternative to the username module which displays a symbol that
-        # represents the current operating system
         os =
           {
             style = "bg:#d65d0e fg:#fbf1c7";
@@ -59,18 +50,6 @@
           truncation_length = 3;
           truncation_symbol = "…/";
         };
-        # Here is how you can shorten some long paths by text replacement
-        # similar to mapped_locations in Oh My Posh:
-        # [directory.substitutions]
-        # "Documents" = "󰈙 "
-        #   "Downloads" = " "
-        # "Music" = " "
-        # "Pictures" = " "
-        # Keep in mind that the order matters. For example:
-        # "Important Documents" = " 󰈙 "
-        # will not be replaced, because "Documents" was already substituted before.
-        # So either put "Important Documents" before "Documents" or use the substituted version:
-        # "Important 󰈙 " = " 󰈙 "
         directory.substitutions = {
           Documents = "󰈙";
           Downloads = "";
@@ -120,6 +99,19 @@
         time_format = "%R";
         style = "bg:#3c3836";
         format = "[[  $time ](fg:#fbf1c7 bg:#3c3836)]($style)";
+        };
+
+        line_break = {
+          disabled = false;
+        };
+        character = {
+          disabled = false;
+          success_symbol = "[](bold fg:#98971a)";
+          error_symbol = "[](bold fg:#cc241d)";
+          vimcmd_symbol = "[](bold fg:#98971a)";
+          vimcmd_replace_one_symbol = "[](bold fg:#b16286)";
+          vimcmd_replace_symbol = "[](bold fg:#b16286)";
+          vimcmd_visual_symbol = "[](bold fg:#d79921)";
         };
       };
     };

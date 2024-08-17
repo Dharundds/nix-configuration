@@ -52,9 +52,9 @@
   services.xserver.gdk-pixbuf.modulePackages = [ pkgs.librsvg ];
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    Variant = "";
   };
 
   # Enable CUPS to print documents.
