@@ -7,8 +7,15 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+    
+      # Hardware 
       ./hardware-configuration.nix
+
+      # GDM
       ./gdm/gdm.nix
+
+      # Postgresql
+      ./postgresql/psql.nix
     ];
 
   # Bootloader.

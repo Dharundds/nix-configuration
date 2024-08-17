@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
   programs.kitty = {
-    enable = true;
+    enable = false;
     font = {
       name = "CascadiaCode Nerd Font";
       size = 10;

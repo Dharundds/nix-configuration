@@ -98,7 +98,7 @@
         disabled = false;
         time_format = "%R";
         style = "bg:#3c3836";
-        format = "[[  $time ](fg:#fbf1c7 bg:#3c3836)]($style)";
+        format = "[[  $time ](fg:#fbf1c7 bg:#3c3836)]($style)";
         };
 
         line_break = {
@@ -106,12 +106,12 @@
         };
         character = {
           disabled = false;
-          success_symbol = "[](bold fg:#98971a)";
-          error_symbol = "[](bold fg:#cc241d)";
-          vimcmd_symbol = "[](bold fg:#98971a)";
-          vimcmd_replace_one_symbol = "[](bold fg:#b16286)";
-          vimcmd_replace_symbol = "[](bold fg:#b16286)";
-          vimcmd_visual_symbol = "[](bold fg:#d79921)";
+          success_symbol = "[](bold fg:#98971a)";
+          error_symbol = "[](bold fg:#cc241d)";
+          vimcmd_symbol = "[](bold fg:#98971a)";
+          vimcmd_replace_one_symbol = "[](bold fg:#b16286)";
+          vimcmd_replace_symbol = "[](bold fg:#b16286)";
+          vimcmd_visual_symbol = "[](bold fg:#d79921)";
         };
       };
     };
