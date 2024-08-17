@@ -16,6 +16,9 @@
 
       # Postgresql
       ./postgresql/psql.nix
+
+      # Docker
+      ./docker/docker.nix
     ];
 
   # Bootloader.
@@ -92,7 +95,7 @@
     isNormalUser = true;
     description = "Dharun C";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird
     ];
