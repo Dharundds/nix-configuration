@@ -101,6 +101,9 @@
     ];
   };
 
+
+  
+
   environment.systemPackages = with pkgs; [
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
@@ -109,33 +112,12 @@
      gh
      brave
      home-manager
-     devbox
-     pyenv
 
      openssl
      gcc
 
     # dev env wrapper
-    (let 
-       packages = with pkgs; [
-        nodejs_20
-        nodePackages.pnpm
-      ];
-    in pkgs.runCommand "node-shell" {
-      buildInputs = packages;
-
-      nativeBuildInputs = [ pkgs.makeWrapper ];
-    } ''
-      mkdir -p $out/bin/
-
-      ln -s ${pkgs.zsh}/bin/zsh $out/bin/node-shell
-
-      wrapProgram $out/bin/node-shell --prefix PATH : ${pkgs.lib.makeBinPath packages}
-    ''
-    )
-
-
-
+     devenv
      
   ];
 
