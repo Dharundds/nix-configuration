@@ -115,6 +115,26 @@
      openssl
      gcc
 
+    # dev env wrapper
+    (let 
+       packages = with pkgs; [
+        nodejs_20
+        nodePackages.pnpm
+      ];
+    in pkgs.runCommand "node-shell" {
+      buildInputs = packages;
+
+      nativeBuildInputs = [ pkgs.makeWrapper ];
+    } ''
+      mkdir -p $out/bin/
+
+      ln -s ${pkgs.zsh}/bin/zsh $out/bin/node-shell
+
+      wrapProgram $out/bin/node-shell --prefix PATH : ${pkgs.lib.makeBinPath packages}
+    ''
+    )
+
+
 
      
   ];
