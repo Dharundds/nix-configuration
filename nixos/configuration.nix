@@ -124,7 +124,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-old-than 7d";
+    options = "--delete-older-than 7d";
   };
 
   fonts.packages = with pkgs; [
