@@ -116,8 +116,7 @@
      openssl
      gcc
 
-    # dev env wrapper
-     devenv
+     devbox
      
   ];
 
