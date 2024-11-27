@@ -19,6 +19,9 @@
 
       # Docker
       ./docker/docker.nix
+
+      # ollama
+      ./ollama/ollama.nix
     ];
 
   # Bootloader.
