@@ -123,6 +123,7 @@
      conntrack-tools
      devbox
      minikube
+     kubectl
      
   ];
 
