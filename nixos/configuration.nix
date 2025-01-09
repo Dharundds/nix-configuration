@@ -122,6 +122,7 @@
      gcc
      conntrack-tools
      devbox
+     minikube
      
   ];
 
