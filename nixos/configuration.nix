@@ -120,6 +120,7 @@
      gcc
 
      devbox
+     minikube
      
   ];
 
