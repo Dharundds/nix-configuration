@@ -120,9 +120,6 @@
      gcc
      conntrack-tools
      devbox
-     kubernetes
-     kubectl
-     minikube
      
   ];
 
