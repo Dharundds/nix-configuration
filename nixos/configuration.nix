@@ -118,7 +118,7 @@
 
      openssl
      gcc
-     conntrack
+     conntrack-tools
      devbox
      minikube
      
