@@ -15,7 +15,7 @@
       ./gdm/gdm.nix
 
       # Postgresql
-      ./postgresql/psql.nix
+      # ./postgresql/psql.nix
 
       # Docker
       ./docker/docker.nix
@@ -115,7 +115,8 @@
      vscode
      discord
      git
-     gh
+     gh 
+     postman
      brave
      home-manager
 

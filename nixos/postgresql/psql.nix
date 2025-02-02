@@ -1,7 +1,7 @@
 {config,pkgs,...}:
 {
   config.services.postgresql = {
-    enable = true;
+    enable = false;
     ensureDatabases = [ "devDB" ];
     authentication = pkgs.lib.mkOverride 10 ''
       #type database DBuser origin-address auth-method
