@@ -119,7 +119,6 @@
      postman
      brave
      home-manager
-     dconf-editor
 
      openssl
      gcc

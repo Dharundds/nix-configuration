@@ -3,7 +3,7 @@
 {
   services.xserver.displayManager.gdm.enable = true;
 
-  # programs.dconf.enable = true;
+  programs.dconf.enable = true;
 
   programs.dconf.profiles = {
     gdm.databases = [{
