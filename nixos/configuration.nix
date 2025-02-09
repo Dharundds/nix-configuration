@@ -15,7 +15,7 @@
       ./gdm/gdm.nix
 
       # Postgresql
-      # ./postgresql/psql.nix
+      ./postgresql/psql.nix
 
       # Docker
       ./docker/docker.nix
@@ -119,6 +119,7 @@
      postman
      brave
      home-manager
+
 
      openssl
      gcc
