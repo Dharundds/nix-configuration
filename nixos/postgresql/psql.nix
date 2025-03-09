@@ -1,6 +1,6 @@
 {config,pkgs,...}:
 {
   config.services.postgresql = {
-    enable = false;
+    enable = true;
   };
 }
