@@ -22,6 +22,9 @@
 
       # ollama
       ./ollama/ollama.nix
+
+      # grub themes
+      ./grub-themes/distro-grub-themes.nix
     ];
 
   # Bootloader.
