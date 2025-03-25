@@ -122,6 +122,7 @@
      postman
      brave
      home-manager
+     rustdesk
 
 
      openssl
