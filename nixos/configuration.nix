@@ -123,6 +123,7 @@
      brave
      home-manager
      rustdesk
+     remmina
 
 
      openssl
