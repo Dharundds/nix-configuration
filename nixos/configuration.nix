@@ -122,9 +122,7 @@
      postman
      brave
      home-manager
-     rustdesk
-     remmina
-
+     code-cursor
 
      openssl
      gcc
