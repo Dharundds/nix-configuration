@@ -25,6 +25,9 @@
 
       # grub themes
       ./grub-themes/distro-grub-themes.nix
+
+      # Hyperland
+      ./hyperland/hyperland.nix
     ];
 
   # Bootloader.
