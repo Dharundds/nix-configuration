@@ -133,6 +133,7 @@
      devbox
      minikube
      kubectl
+     kitty
      
   ];
 
