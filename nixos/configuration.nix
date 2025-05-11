@@ -125,7 +125,7 @@
      postman
      brave
      home-manager
-     code-cursor
+    #  code-cursor
 
      openssl
      gcc
@@ -134,6 +134,7 @@
      minikube
      kubectl
      kitty
+     waybar
      
   ];
 
