@@ -24,7 +24,7 @@
     ./dotfiles/dotfiles.nix
 
     # eww
-    ./eww/eww.nix
+    # ./eww/eww.nix
 
 
   ];
