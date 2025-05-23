@@ -134,7 +134,11 @@
      minikube
      kubectl
      kitty
-     waybar
+
+    #  waybar
+    #  hyprpaper
+    eww
+    nh
      
   ];
 
