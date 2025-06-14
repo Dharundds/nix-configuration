@@ -33,6 +33,12 @@
       fsType = "ext4";
     };
 
+  fileSystems."/home/dharundds/C" = 
+  {
+    device = "/dev/disk/by-uuid/E09056A7905683C6";
+    fsType = "ntfs";
+  };
+
   fileSystems."/home/dharundds/Misc" = {
     device = "/dev/disk/by-uuid/6b3313e8-d734-4ec4-972a-4e4040c5ac65";
     fsType = "ext4";

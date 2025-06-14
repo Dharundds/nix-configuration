@@ -27,7 +27,7 @@
       ./grub-themes/distro-grub-themes.nix
 
       # Hyperland
-      ./hyperland/hyperland.nix
+      # ./hyperland/hyperland.nix
     ];
 
   # Bootloader.
@@ -125,7 +125,7 @@
      postman
      brave
      home-manager
-    #  code-cursor
+     code-cursor
 
      openssl
      gcc
@@ -137,8 +137,9 @@
 
     #  waybar
     #  hyprpaper
-    eww
+    # eww
     nh
+    # chntpw
      
   ];
 

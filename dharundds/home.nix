@@ -21,7 +21,7 @@
     ./kitty/kitty.nix
 
     # managing dotfiles
-    ./dotfiles/dotfiles.nix
+    # ./dotfiles/dotfiles.nix
 
     # eww
     # ./eww/eww.nix
