@@ -152,7 +152,7 @@
   fonts.packages = with pkgs; [
     # (nerdfonts.override { fonts = ["CascadiaCode" "DroidSansMono" "Cousine"]; } )
     nerd-fonts._0xproto
-    nerd-fonts.symbols-only
+    # nerd-fonts.symbols-only
     nerd-fonts.droid-sans-mono
     nerd-fonts.cousine
   ];
