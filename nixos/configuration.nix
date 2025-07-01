@@ -129,6 +129,7 @@
 
      openssl
      gcc
+     gnumake
      conntrack-tools
      devbox
      minikube
