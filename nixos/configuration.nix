@@ -126,6 +126,7 @@
      brave
      home-manager
      code-cursor
+     zed-editor
 
      openssl
      gcc
