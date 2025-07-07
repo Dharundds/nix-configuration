@@ -26,6 +26,7 @@
       # grub themes
       ./grub-themes/distro-grub-themes.nix
 
+      ./networking/networking.nix
       # Hyperland
       # ./hyperland/hyperland.nix
     ];
