@@ -7,7 +7,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellAliases = {
-      cursor = "cursor . > /dev/null 2>&1 &";
+      # cursor = "cursor . > /dev/null 2>&1 &";
     };
 
     oh-my-zsh = {
