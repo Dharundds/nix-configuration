@@ -27,6 +27,8 @@
       ./grub-themes/distro-grub-themes.nix
 
       ./networking/networking.nix
+
+      ./tailscale/tailscale.nix
       # Hyperland
       # ./hyperland/hyperland.nix
     ];
@@ -128,6 +130,7 @@
      home-manager
      code-cursor
      zed-editor
+     tailscale
 
      openssl
      gcc
