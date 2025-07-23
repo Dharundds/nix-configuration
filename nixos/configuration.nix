@@ -24,7 +24,7 @@
       ./ollama/ollama.nix
 
       # grub themes
-      ./grub-themes/distro-grub-themes.nix
+      # ./grub-themes/distro-grub-themes.nix
 
       ./networking/networking.nix
 
@@ -171,6 +171,13 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  boot.loader.grub.enable = true;
+  boot.loader.grub2-theme = {
+    enable = true;
+    theme = "stylish";
+    footer = true;
+    customResolution = "1600x900";  # Optional: Set a custom resolution
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 

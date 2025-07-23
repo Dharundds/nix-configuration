@@ -1,5 +1,23 @@
 {
   "nodes": {
+    "grub2-themes": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1753236723,
+        "narHash": "sha256-nheZ7t89/Ob/O1nWbGv0RrFrfPR4ArDV4sX1EuO6OmA=",
+        "owner": "vinceliuice",
+        "repo": "grub2-themes",
+        "rev": "739cddf60fb0090282ca306805ea0ce5b2fd9447",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vinceliuice",
+        "repo": "grub2-themes",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -23,6 +41,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1753236728,
+        "narHash": "sha256-MYUk3x5gvnxbd0NVltrD0eQCluXmAsOkIzn9qaHQ9mA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "47632015eee0ba154db920d50851ac92f8409b69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1749727998,
         "narHash": "sha256-mHv/yeUbmL91/TvV95p+mBVahm9mdQMJoqaTVTALaFw=",
         "owner": "nixos",
@@ -39,8 +73,9 @@
     },
     "root": {
       "inputs": {
+        "grub2-themes": "grub2-themes",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
