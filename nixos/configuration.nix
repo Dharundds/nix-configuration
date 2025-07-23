@@ -140,6 +140,7 @@
      minikube
      kubectl
      kitty
+     dig
 
     #  waybar
     #  hyprpaper
