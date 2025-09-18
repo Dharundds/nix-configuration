@@ -141,6 +141,7 @@
      kubectl
      kitty
      dig
+     inetutils
 
     #  waybar
     #  hyprpaper
