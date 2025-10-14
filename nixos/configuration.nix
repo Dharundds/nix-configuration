@@ -116,8 +116,8 @@
   systemd.services."user@".serviceConfig.Delegate = "memory pids cpu cpuset io";
 
   environment.shellAliases = {
-    psql = "docker exec -it psql";
-  }
+    psql = "docker exec -it postgres psql";
+  };
   
 
   environment.systemPackages = with pkgs; [

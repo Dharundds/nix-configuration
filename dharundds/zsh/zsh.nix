@@ -8,6 +8,7 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       # cursor = "cursor . > /dev/null 2>&1 &";
+      # psql = "docker exec -it postgres psql";
     };
 
     oh-my-zsh = {
